@@ -31,11 +31,15 @@ int main()  {
 	 //on success copy fd into array and spin off threaad.
      pthread_create( &ThreadArray[x], NULL, Connection, NULL);
     }
+    
+    pthread_join(ThreadArray[0], NULL); //needs for loop
+    return 0;
 } 
 
 void Connection(void *p)  {
 	
 	printf("connection details%d\n", 2); // p->count);
-	sleep(2);
+	sleep(5);
+	
 	//close(socket);
 }
