@@ -25,7 +25,7 @@ int main()  {
     } 
    */
    for ( ; x < MAX ; x++ )   {  // change for loop then wait on threads join.
-	   
+//a new comment.	   
 	 while(0); //(connection not yeald) { incrementAddress(); }
 	 
 	 //on success copy fd into array and spin off threaad.
